@@ -1,0 +1,27 @@
+# Concept Fingerprint — Documento 112.7D, seção 27.
+#
+# Pesos-base por campo e decaimentos de expansão. São hipóteses de engenharia
+# versionadas (não representam confiança científica): mudança aqui muda
+# `weights_version` → muda o fingerprint_hash de eventos reprocessados.
+
+version: "1"
+
+weights:
+  keyword: 1.00
+  scientific_area: 1.00
+  category: 0.90
+  entity: 0.90
+  country: 0.85
+  title: 0.85
+  summary: 0.70
+  evidence: 0.65
+  parent_decay: 0.70
+  related_decay: 0.40
+
+include_parents: true
+max_parent_depth: 3
+
+include_related: true
+max_related_depth: 1
+
+minimum_contribution: 0.05
